@@ -5,7 +5,7 @@
  Written in Python, for General- and Special-Purpose Use
 ---------------------------------------------------------
 
-Docutils is an open-source text processing system for processing
+Patutils is an open-source text processing system for processing
 plaintext documentation into useful formats, such as HTML, LaTeX,
 man-pages, open-document or XML.
 It includes reStructuredText_, the easy to read, easy to use,
