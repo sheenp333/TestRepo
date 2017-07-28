@@ -1,0 +1,63 @@
+===================================
+ Docutils: Documentation Utilities
+===================================
+---------------------------------------------------------
+ Written in Python, for General- and Special-Purpose Use
+---------------------------------------------------------
+
+Docutils is an open-source text processing system for processing
+plaintext documentation into useful formats, such as HTML, LaTeX,
+man-pages, open-document or XML.
+It includes reStructuredText_, the easy to read, easy to use,
+what-you-see-is-what-you-get plaintext markup language.
+----------------------------------------------------------------------
+
+===================================
+ Blockdiag examples
+===================================
+.. blockdiag::
+
+    blockdiag admin {
+      top_page -> config -> config_edit -> config_confirm -> top_page;
+    }
+.. blockdiag::
+   :desctable:
+
+   blockdiag {
+      A -> B -> C;
+      A [description = "browsers in each client"];
+      B [description = "web server"];
+      C [description = "database server"];
+   }
+
+
+===================================
+ graphviz examples
+===================================
+.. graphviz::
+
+   digraph foo {
+      "bar" -> "baz";
+   }
+
+.. graphviz::
+
+     digraph example {
+         a [label="sphinx", href="http://sphinx-doc.org", target="_top"];
+         b [label="other"];
+         a -> b;
+     }
+
+.. digraph:: foo
+
+   "bar" -> "baz" -> "quux";
+
+.. graph:: foo
+
+   "bar" -- "baz";
+
+
+Overview
+========
+
+**To get up & running quickly**, see the section of the
